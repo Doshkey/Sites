@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=@utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title></title>
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: white;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #007099;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight:"bold"
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #003B69;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white; 
+}
+
+.show {
+    display: block;
+}
+</style>
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="all,follow" />
+
+
+<!-- CSS --> 
+<link rel="stylesheet" href="styles/default.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body id="top">
+<div id="wrapper">
+
+	<div class="header">
+	<h1><span><a href="">Web-технологии в информационных системах</a></span></h1>
+	<p id="about">Отчет по практике</p>
+
+	<a href="#skip-menu" class="hidden">Skip menu</a> <!-- Skip menu -->
+		<div class="navbar">
+  <a href="OS.html">Выбор ОС</a>
+  <a href="FS.html">Выбор ФС</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>Другое</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Archieve.html"><i>Средства архивации</i></a>
+      <a href="Harddisc.html"><i>Управление ЖД</i></a>
+    </div>
+  </div> 
+</div>
+
+	
+	</div> <!-- Header end -->
+
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
+	<div class="page">
+		<div class="col-r">
+		<div class="col-r-in">
+		<h2>Средства архивации</h2>
+			
+<p>
+Архиваторы — это программы, позволяющие уменьшить размер файла. В основном архиваторы используют для отправки файлов по электронной почте, потому что с их помощью можно сократить трафик и объединить несколько файлов в один архив. Кроме того, современные программы предлагают ряд других удобных функций, таких как установка пароля на архив, разбивка одного файла на несколько частей и так далее.
+</p>
+
+
+
+<hr class="noscreen" />
+<br />
+
+		<h3><span>О каждой программе</span></h3>
+		<div class="article"><p>
+7-Zip — свободный файловый архиватор с высокой степенью сжатия данных. Поддерживает несколько алгоритмов сжатия и множество форматов данных, включая собственный формат 7z c высокоэффективным алгоритмом сжатия LZMA.
+</p>
+
+
+		</div>
+
+		<div class="article-zebra"><p>WinZip — условно-бесплатный файловый архиватор и компрессор фирмы Corel для операционных систем Microsoft Windows, OS X, iOS и Android. ZIP является основным форматом, хотя поддерживаются и другие архивные форматы.</p>
+		</div>
+
+		<div class="article"><p>WinRAR — это один из самых мощных и удобных архиваторов для Windows. Программа позволяет создавать архивы RAR практически любых размеров, содержащие неограниченное число файлов, поддерживает форматы RAR и ZIP, может выполнять все основные операции с форматами: 7Z, ACE, ARJ, BZ2, CAB, GZ, JAR, LZH, TAR, UUE, Z и ISO (CD-имиджи), а также умеет создавать самораспаковывающиеся архивы типа SFX. Архиватор автоматически распознаёт формат данных и выбирает лучший метод сжатия.
+
+</p>
+		</div>
+
+		
+<hr class="noscreen" />
+<br />
+
+		<h3><span>Иллюстрации</span></h3>
+		<div class="gallery">
+		<a href="#"><img src="img/7зип.png" alt="" class="scale"  width="120" height="90" /></a>
+		<a href="#"><img src="img/винзип1.png" alt="" class="scale" width="120" height="90" /></a>
+		<a href="#"><img src="img/рар1.png" alt="" class="scale" width="120" height="90" /></a>
+		
+		</div>
+
+		</div>
+		</div> <!-- Right column end -->
+
+<hr class="noscreen" />
+
+	<div class="col-l">
+	<div class="col-l-in">
+	<h3>Об авторе:</h3>
+<p>Выполнила студент ИЭУИС 4 курса 4 группы Тевс Дарья Сергеевна</p>
+	
+<br />
+
+		</div>
+		</div> <!-- Left column end -->
+
+<div class="cleaner"></div>
+
+	</div> 
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>

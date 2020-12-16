@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=@utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title></title>
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: white;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #007099;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight:"bold"
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #003B69;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white; 
+}
+
+.show {
+    display: block;
+}
+</style>
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="all,follow" />
+
+
+<!-- CSS --> 
+<link rel="stylesheet" href="styles/default.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body id="top">
+<div id="wrapper">
+
+	<div class="header">
+	<h1><span><a href="">Web-технологии в информационных системах</a></span></h1>
+	<p id="about">Отчет по практике</p>
+
+	<a href="#skip-menu" class="hidden">Skip menu</a> <!-- Skip menu -->
+		<div class="navbar">
+  <a href="OS.html">Выбор ОС</a>
+  <a href="FS.html">Выбор ФС</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>Другое</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Archieve.html"><i>Средства архивации</i></a>
+      <a href="Harddisc.html"><i>Управление ЖД</i></a>
+    </div>
+  </div> 
+</div>
+
+	
+	</div> <!-- Header end -->
+
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
+	<div class="page">
+		<div class="col-r">
+		<div class="col-r-in">
+		<h2>Выбор операционной системы</h2>
+		<p>Операционная система, сокр. ОС (англ. operating system, OS) — комплекс взаимосвязанных программ, предназначенных для управления ресурсами компьютера и организации взаимодействия с пользователем.
+</p>
+<p>ОС служит посредником между компьютером, исполняющими программами и пользователем. Операционная система представляет приложениям и пользователю набор универсальных услуг:
+<ul>
+<li>загружает программы в память для выполнения;</li>
+<li>получает и выполняет команды пользователя;</li>
+<li>организует взаимодействие с принтером, сканером, сетью.</li>
+</ul></p>
+<p>Всегда, после покупки компьютера, появляется вопрос о выборе операционной системы. Несомненно, это важная проблема, ведь неправильный выбор может привести к неудобству или невозможности использовать весь функционал ПК. Перед выполнением курсового проекта я задумалась, какую ОС было бы целесообразнее использовать?
+</p>
+<p>В первую очередь, выбор стоял перед ОС Linux или Windows. Операционными системами семейства Windows оснащены подавляющее большинство компьютеров по всему миру. Этому есть объяснение: пользователи получают лучшую поддержку компьютерного оборудования, большее количество прикладных программ, чем для Linux, и 100% вероятность возможности проконсультироваться со специалистами в случае проблем. Также, ОС Linux требуют высокой подготовки пользователя для работы и обучения в сфере IT. Для рядового пользователя выбор в сторону Windows очевиден. 
+</p>
+<p>Следующий шаг – выбор версии ОС Windows. Проведем сравнение, начиная с Windows XP, заканчивая Windows 10. Windows ХР подходит для ноутбуков с ограниченным количеством памяти и устаревшей графикой, пригодной для офисного использования. Возможности моего ноутбука выше, поэтому рассмотрим другие варианты. Windows 7 быстрее Vista и Windows XP. Мой ноутбук укомплектован 4-ядерным процессором, а объём оперативной памяти более 1 ГБ. Следовательно, выбор в пользу Windows 7 очевиден. Нет смысла устанавливать Windows 8, так как их отличия с предыдущей версией  минимальны: только в дизайне рабочего стола. Windows 10 обычно устанавливают в результате автоматических обновлений. Это часть стратегии по переходу к модели «Windows как сервис», когда система через обновления изменяется постоянно, без выхода новых версий. Официальные требования ОС остались на том же уровне, что и 7 и 8 версии. Устанавливать Windows 10 на ноутбуках, где работает Windows 7, нет никакого смысла. 
+</p>
+
+<hr class="noscreen" />
+<br />
+
+		
+
+		</div>
+		</div> <!-- Right column end -->
+
+<hr class="noscreen" />
+
+	<div class="col-l">
+	<div class="col-l-in">
+	<h3>Об авторе:</h3>
+<p>Выполнила студент ИЭУИС 4 курса 4 группы Тевс Дарья Сергеевна</p>
+	
+<br />
+
+		</div>
+		</div> <!-- Left column end -->
+
+<div class="cleaner"></div>
+
+	</div> 
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>
