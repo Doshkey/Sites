@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=@utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title></title>
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: white;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #007099;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight:"bold"
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #003B69;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white; 
+}
+
+.show {
+    display: block;
+}
+</style>
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="all,follow" />
+
+
+<!-- CSS --> 
+<link rel="stylesheet" href="styles/default.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body id="top">
+<div id="wrapper">
+
+	<div class="header">
+	<h1><span><a href="">Web-технологии в информационных системах</a></span></h1>
+	<p id="about">Отчет по практике</p>
+
+	<a href="#skip-menu" class="hidden">Skip menu</a> <!-- Skip menu -->
+		<div class="navbar">
+  <a href="OS.html">Выбор ОС</a>
+  <a href="FS.html">Выбор ФС</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>Другое</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Archieve.html"><i>Средства архивации</i></a>
+      <a href="Harddisc.html"><i>Управление ЖД</i></a>
+    </div>
+  </div> 
+</div>
+
+	
+	</div> <!-- Header end -->
+
+<hr class="noscreen" />
+
+<div id="skip-menu"></div>
+	<div class="page">
+		<div class="col-r">
+		<div class="col-r-in">
+		<h2>Средства создания и управления виртуальными машинами</h2>
+		<p>Виртуализация — это общий термин, охватывающий абстракцию ресурсов для многих аспектов вычислений. Виртуальная машина - это компьютерная программа, которая представляет имитацию оборудования для операционной системы, работающей как внутрисистемный процесс. Виртуальные машины полезны для тестирования или развёртывания нескольких независимых операционных систем на одном физическом компьютере.</p>
+<p>
+Виртуальные машины могут использоваться для:
+<ul>
+<li>защиты информации и ограничения возможностей программ (см.: песочница);</li>
+<li>исследования производительности ПО или новой компьютерной архитектуры;
+<li>эмуляции различных архитектур (например, эмулятор игровой приставки);</li>
+<li>оптимизации использования ресурсов мейнфреймов и прочих мощных компьютеров (см., например: IBM eServer)</li>
+<li>запуска вредоносного кода с целью перехвата управления инфицированной системой: вирус PMBS, обнаруженный в 1993 году, а также руткит SubVirt, созданный в 2006 году в Microsoft Research, создавали виртуальную систему, которой ограничивался пользователь и все защитные программы (антивирусы и прочие);</li>
+<li>моделирования информационных систем с клиент-серверной архитектурой на одной ЭВМ (эмуляция компьютерной сети с помощью нескольких виртуальных машин);</li>
+<li>упрощения управления кластерами — виртуальные машины могут просто мигрировать с одной физической машины на другую во время работы;</li>
+<li>тестирования и отладки системного программного обеспечения;</li>
+<li>проверки программ на содержание вредоносного ПО.</li>
+</ul></p>
+<p>
+Наиболее популярными машинами на сегодняшний день являются виртуальные машины семейства  VMware, Oracle Virtual Box и Windows Virtual PC. Рассмотрим каждую из них.
+
+
+<hr class="noscreen" />
+<br />
+
+		<h3><span>О каждой виртуальной машине</span></h3>
+		<div class="article"><p>VirtualBox полезна также тем, кто хочет получить больше опыта по работе с настройкой сетей. Можно установить сразу несколько ОС, возможно, даже разных, можно опять же настраивать их, работать с ними, не повреждая при этом свою операционную систему. Таким образом, можно осваивать компьютерные технологии, практиковаться, получать новые навыки.</p>
+
+		</div>
+
+		<div class="article-zebra"><p>Virtual PC — программный пакет виртуализации для операционной системы Windows, а также программа эмуляции для Mac OS.</p>
+		</div>
+
+		<div class="article"><p>Когда на рынок выходила Windows 7, в Microsoft поняли, что в бизнесе для популяризации новой системы и для совместимости старых приложений необходима возможность запуска приложений прямо из виртуальной среды Windows XP, поэтому корпорация выпустила специально адаптированную для Windows 7 версию и назвала её Windows Virtual PC. Этот компонент распространяется через Windows Update как обновление. Для использования режима требуется Windows 7 в редакциях «Профессиональная», «Корпоративная» или «Максимальная». Помимо запуска самой виртуальной машины, можно также запускать отдельные установленные приложения. Но для работы самой виртуальной машины нужна виртуальная среда с Windows XP и установленными компонентами интеграции. Эта среда, получившая название Windows XP Mode, как и сам Windows Virtual PC, свободна для загрузки, однако на виртуальную машину можно установить также Windows 7 и Windows Vista, а компоненты интеграции всегда можно установить через меню «Сервис», выбрав соответствующую команду.
+</p>
+		</div>
+
+		<div class="article-zebra"><p>VMware Workstation Pro создает полностью изолированные безопасные виртуальные машины, инкапсулирующие операционные системы и приложения. Уровень виртуализации VMware сопоставляет ресурсы физического оборудования с ресурсами виртуальной машины. Таким образом, каждая виртуальная машина получает собственные ресурсы ЦП и памяти, дисковое пространство и устройства ввода-вывода и является полным эквивалентом стандартного компьютера x86. VMware Workstation Pro устанавливается в операционной системе узла и предоставляет широкую поддержку оборудования за счет наследования поддерживаемого оборудования операционной системы узла.
+</p>
+		</div>
+
+<hr class="noscreen" />
+<br />
+
+		<h3><span>Иллюстрации</span></h3>
+		<div class="gallery">
+		<a href="#"><img src="img/вар2.png" alt="" class="scale"  width="120" height="90" /></a>
+		<a href="#"><img src="img/оракл1.png" alt="" class="scale" width="120" height="90" /></a>
+		<a href="#"><img src="img/пк2.png" alt="" class="scale" width="120" height="90" /></a>
+		
+		</div>
+
+		</div>
+		</div> <!-- Right column end -->
+
+<hr class="noscreen" />
+
+	<div class="col-l">
+	<div class="col-l-in">
+	<h3>Об авторе:</h3>
+<p>Выполнила студент ИЭУИС 4 курса 4 группы Тевс Дарья Сергеевна</p>
+	
+<br />
+
+		</div>
+		</div> <!-- Left column end -->
+
+<div class="cleaner"></div>
+
+	</div> 
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>
